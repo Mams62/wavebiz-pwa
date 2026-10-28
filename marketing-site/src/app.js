@@ -32,7 +32,7 @@ const products = {
     features: ["A thoughtful scan, review and confirm journey", "A vision for traceable receipts and transaction history", "Wallets, transfers and bills on the roadmap"],
     link: "Explore the customer journey",
     visualClass: "customer-visual",
-    visual: `<div class="visual-rings"></div><div class="demo-screen"><div class="demo-screen-head">${icon('qr')} A simpler checkout</div><div class="demo-screen-body"><span class="demo-screen-subtitle">THE CUSTOMER EXPERIENCE</span><h4>A small scan.<br>A new possibility.</h4><div class="big-qr" data-qr></div><span class="preview-tag">ILLUSTRATIVE QR · NOT FOR PAYMENT</span><div class="demo-screen-footer"><span>Scan → review → confirm</span>${icon('arrow')}</div></div></div><div class="floating-mini">${icon('receipt')}<div><strong>A record that stays with you.</strong><small>Receipts & history · concept</small></div></div><span class="visual-bottom-label">WAVE TRANSAKT · PRODUCT CONCEPT</span>`
+    visual: `<div class="visual-rings"></div><div class="demo-screen"><div class="demo-screen-head">${icon('qr')} My Wave wallet</div><div class="demo-screen-body"><span class="demo-screen-subtitle">Chinedu Musa Ade · Sample profile</span><span class="demo-balance-label">Illustrative balance</span><h4 class="demo-balance">₦6,300.00</h4><div class="big-qr" data-qr></div><span class="preview-tag">SAMPLE WALLET QR · NOT FOR PAYMENT</span><div class="demo-screen-footer"><span>Illustrative wallet · no funds held</span>${icon('arrow')}</div></div></div><div class="floating-mini">${icon('receipt')}<div><strong>A record that stays with you.</strong><small>Receipts & history · concept</small></div></div><span class="visual-bottom-label">WAVE TRANSAKT · PRODUCT CONCEPT</span>`
   },
   business: {
     status: "BUSINESS TOOLS · IN DEVELOPMENT",
@@ -82,7 +82,8 @@ $$('[data-product]').forEach((tab, index, tabs) => {
     if (next !== undefined) { event.preventDefault(); selectProduct(tabs[next].dataset.product, true); }
   });
 });
-selectProduct('customer');
+const initialProduct = new URLSearchParams(location.search).get('product');
+selectProduct(['customer','business','pos'].includes(initialProduct) ? initialProduct : 'customer');
 
 const menuToggle = $('.menu-toggle');
 function closeMenu() {
@@ -217,6 +218,8 @@ $('#step-pause').addEventListener('click', () => {
   syncPlayback();
 });
 document.addEventListener('click', event => {
+  const productLink = event.target.closest('[data-select-product]');
+  if (productLink) selectProduct(productLink.dataset.selectProduct);
   const trigger = event.target.closest('[data-walkthrough]');
   if (trigger) openWalkthrough(Number(trigger.dataset.start || 0));
 });
@@ -279,7 +282,6 @@ $('#watch-button').addEventListener('click', () => {
   showDialog(walkthrough);
 });
 
-$('#privacy-button').addEventListener('click', () => showDialog($('#privacy-dialog')));
 $$('[data-close-dialog]').forEach(button => button.addEventListener('click', () => button.closest('dialog').close()));
 $$('dialog').forEach(dialog => {
   dialog.addEventListener('click', event => {

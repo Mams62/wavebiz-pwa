@@ -26,3 +26,14 @@ Edit the files in `src/`. `index.html` contains page content and sections. `styl
 `src/site-config.js` accepts `demoVideoUrl`: use a full YouTube URL or an MP4 path such as `assets/wave-explainer.mp4`. An empty value keeps the five-step interactive concept walkthrough.
 
 To verify a local build, set `SITE_URL` to the local preview origin and run `node marketing-site/build.mjs` from the repository root.
+
+
+## Brand, sample wallet and information pages
+
+The logo mark is preserved from the Wave Transakt Android vector asset; see `BRAND.md` for the original repository path and Git blob. The customer phone illustration uses the user-requested sample profile Chinedu Musa Ade and a ₦6,300.00 illustrative balance. Its QR is a concept pattern, not a live payment destination.
+
+The site includes original company, trust and safety content and dedicated `privacy.html`, `terms.html`, `regulatory.html` and `support.html` pages. These describe the informational website and development status, not a licensed or live financial service. They do not claim CBN licensing, NDIC deposit insurance, PCI certification, guaranteed transaction performance, real customers or financial traction.
+
+The content structure was informed by a review of OPay's public homepage, without reproducing its promotional copy, brand assets, certification claims or service promises. Official reference links cover the CBN payment-service provider directory and complaint guidance, and the Nigeria Data Protection Commission.
+
+Review the privacy and service terms whenever actual data collection, providers or live product availability change.
