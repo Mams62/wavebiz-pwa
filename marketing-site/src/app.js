@@ -32,7 +32,7 @@ const products = {
     features: ["A thoughtful scan, review and confirm journey", "A vision for traceable receipts and transaction history", "Wallets, transfers and bills on the roadmap"],
     link: "Explore the customer journey",
     visualClass: "customer-visual",
-    visual: `<div class="visual-rings"></div><div class="demo-screen"><div class="demo-screen-head">${icon('qr')} My Wave wallet</div><div class="demo-screen-body"><span class="demo-screen-subtitle">Chinedu Musa Ade · Sample profile</span><span class="demo-balance-label">Illustrative balance</span><h4 class="demo-balance">₦6,300.00</h4><div class="big-qr" data-qr></div><span class="preview-tag">SAMPLE WALLET QR · NOT FOR PAYMENT</span><div class="demo-screen-footer"><span>Illustrative wallet · no funds held</span>${icon('arrow')}</div></div></div><div class="floating-mini">${icon('receipt')}<div><strong>A record that stays with you.</strong><small>Receipts & history · concept</small></div></div><span class="visual-bottom-label">WAVE TRANSAKT · PRODUCT CONCEPT</span>`
+    visual: `<div class="visual-rings"></div><div class="demo-screen"><div class="demo-screen-head">${icon('qr')} My Wave wallet</div><div class="demo-screen-body"><span class="demo-screen-subtitle">Chinedu Musa Ade</span><span class="demo-balance-label">Illustrative balance</span><h4 class="demo-balance">₦6,300.00</h4><div class="big-qr" data-qr></div><span class="preview-tag">SAMPLE WALLET QR · NOT FOR PAYMENT</span></div></div><div class="floating-mini">${icon('receipt')}<div><strong>A record that stays with you.</strong><small>Receipts & history · concept</small></div></div><span class="visual-bottom-label">WAVE TRANSAKT · PRODUCT CONCEPT</span>`
   },
   business: {
     status: "BUSINESS TOOLS",
