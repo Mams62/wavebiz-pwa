@@ -26,7 +26,7 @@ fillQR();
 const bars = '<i style="--height:38%"></i><i style="--height:55%"></i><i style="--height:45%"></i><i style="--height:78%"></i><i style="--height:62%"></i><i style="--height:93%"></i><i style="--height:76%"></i>';
 const products = {
   customer: {
-    status: "CUSTOMER APP · IN DEVELOPMENT",
+    status: "CUSTOMER APP",
     title: "Your everyday.<br>With a better flow.",
     description: "Meet the customer side of Wave Transakt: a QR-first journey that brings merchant details, payment history and receipts into a clearer experience.",
     features: ["A thoughtful scan, review and confirm journey", "A vision for traceable receipts and transaction history", "Wallets, transfers and bills on the roadmap"],
@@ -35,7 +35,7 @@ const products = {
     visual: `<div class="visual-rings"></div><div class="demo-screen"><div class="demo-screen-head">${icon('qr')} My Wave wallet</div><div class="demo-screen-body"><span class="demo-screen-subtitle">Chinedu Musa Ade · Sample profile</span><span class="demo-balance-label">Illustrative balance</span><h4 class="demo-balance">₦6,300.00</h4><div class="big-qr" data-qr></div><span class="preview-tag">SAMPLE WALLET QR · NOT FOR PAYMENT</span><div class="demo-screen-footer"><span>Illustrative wallet · no funds held</span>${icon('arrow')}</div></div></div><div class="floating-mini">${icon('receipt')}<div><strong>A record that stays with you.</strong><small>Receipts & history · concept</small></div></div><span class="visual-bottom-label">WAVE TRANSAKT · PRODUCT CONCEPT</span>`
   },
   business: {
-    status: "BUSINESS TOOLS · IN DEVELOPMENT",
+    status: "BUSINESS TOOLS",
     title: "Your business.<br>A clearer picture.",
     description: "Wavebiz is our business-management concept for Nigerian SMEs. Connect the everyday details of running a shop, so the bigger picture is easier to see.",
     features: ["Sales, stock and expenses in one business view", "Customer debts, invoices, receipts and reports", "Business tools first; payment integration planned separately"],
@@ -44,7 +44,7 @@ const products = {
     visual: `<div class="visual-rings"></div><div class="business-dashboard"><div class="dashboard-top">${icon('shop')} wavebiz<span>BUSINESS CONCEPT</span></div><div class="dashboard-body"><small>YOUR BUSINESS, AT A GLANCE</small><div class="dashboard-title">From daily sales.<br>To a bigger picture.</div><div class="dashboard-chart">${bars}</div><div class="dashboard-items"><div>${icon('box')} Inventory</div><div>${icon('receipt')} Receipts</div><div>${icon('chart')} Reports</div></div></div></div><div class="floating-mini">${icon('chart')}<div><strong>Run your business smarter.</strong><small>Illustrative business overview</small></div></div><span class="visual-bottom-label">WAVEBIZ · PRODUCT CONCEPT</span>`
   },
   pos: {
-    status: "CHECKOUT & TERMINALS · IN DEVELOPMENT",
+    status: "CHECKOUT & TERMINALS",
     title: "At the counter.<br>In the same flow.",
     description: "A dedicated Wave POS experience, designed to connect merchant identity, terminal pairing and checkout records with the wider Wave ecosystem.",
     features: ["Separate Android app for the checkout experience", "Merchant and terminal pairing concepts", "QR-first vision, with card and contactless on the roadmap"],
@@ -133,12 +133,12 @@ const steps = [
   },
   {
     title: "Know who you're paying.",
-    description: "Review the merchant and the amount before confirmation. Account verification and payment authorisation are part of the intended journey and require completed integrations and testing.",
+    description: "Review the merchant and the amount before confirmation.",
     visual: `<div class="journey-icon">${icon('shop')}</div><h4>Review the details.</h4><div class="journey-row"><span>Merchant</span><strong>Example Store</strong></div><div class="journey-row"><span>Amount</span><strong>₦5,000.00</strong></div><span class="journey-pill">Illustrative details · no payment</span>`
   },
   {
     title: "Keep both sides informed.",
-    description: "The vision connects customer confirmation, merchant records and traceable receipts. Live payment status and settlement will depend on verified payment providers and end-to-end testing.",
+    description: "The vision connects customer confirmation, merchant records and traceable receipts.",
     visual: `<div class="journey-icon">${icon('receipt')}</div><h4>The story of a sale.</h4><div class="journey-row"><span>Customer</span><strong>A clear record</strong></div><div class="journey-row"><span>Merchant</span><strong>A traceable receipt</strong></div><div class="journey-row"><span>Stage</span><strong>Product concept</strong></div><span class="journey-pill">No funds moved in this preview.</span>`
   },
   {
