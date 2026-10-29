@@ -21,7 +21,7 @@ The build has no dependency installation step. Static hosting uses Render's free
 
 ## Editing
 
-Edit the files in `src/`. `index.html` contains page content and sections. `styles.css` contains the responsive design. `app.js` powers the product tabs, concept walkthrough, mobile navigation, FAQs and privacy dialog.
+Edit the files in `src/`. `index.html` contains page content and sections. `styles.css` contains the responsive design. `app.js` powers the product tabs, concept walkthrough, mobile navigation, FAQs and email-copy action.
 
 `src/site-config.js` accepts `demoVideoUrl`: use a full YouTube URL or an MP4 path such as `assets/wave-explainer.mp4`. An empty value keeps the five-step interactive concept walkthrough.
 
@@ -37,3 +37,12 @@ The site includes original company, trust and safety content and dedicated `priv
 The content structure was informed by a review of OPay's public homepage, without reproducing its promotional copy, brand assets, certification claims or service promises. Official reference links cover the CBN payment-service provider directory and complaint guidance, and the Nigeria Data Protection Commission.
 
 Review the privacy and service terms whenever actual data collection, providers or live product availability change.
+
+
+## Free support email
+
+The published support address is `wavetransakt+support@gmail.com`. This is Gmail plus addressing on the existing, connected company mailbox `wavetransakt@gmail.com`. It has no separate account, password, inbox, ticketing service, subscription or domain registration. The plus sign is encoded as `%2B` in mailto recipients.
+
+The homepage contact area, FAQ contact link, support page and footer support links use the alias. General business and privacy contact details can still use the base company address; they reach the same mailbox. `src/site-config.js` stores `supportEmail` for the copy action. If this address changes, update the static HTML links and visible text as well.
+
+The connected company Gmail profile was verified. No test email was sent and live delivery was not tested. No automatic filter, auto-reply, separate mailbox or Zoho Desk account was created. Zoho signup remains incomplete.

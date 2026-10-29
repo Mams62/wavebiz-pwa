@@ -110,12 +110,13 @@ function toast(message) {
   element.classList.add('is-visible');
   toastTimer = setTimeout(() => element.classList.remove('is-visible'), 3500);
 }
+const supportEmail = window.WAVE_CONFIG?.supportEmail || 'wavetransakt+support@gmail.com';
 $('#copy-email').addEventListener('click', async () => {
   try {
-    await navigator.clipboard.writeText('wavetransakt@gmail.com');
-    toast('Email address copied.');
+    await navigator.clipboard.writeText(supportEmail);
+    toast('Support email address copied.');
   } catch {
-    toast('Our email: wavetransakt@gmail.com');
+    toast('Our support email: ' + supportEmail);
   }
 });
 

@@ -4,5 +4,6 @@
    Leave empty to use the built-in illustrative walkthrough. */
 window.WAVE_CONFIG = {
   contactEmail: "wavetransakt@gmail.com",
+  supportEmail: "wavetransakt+support@gmail.com",
   demoVideoUrl: ""
 };

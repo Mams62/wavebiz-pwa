@@ -18,3 +18,9 @@ This is an informational marketing website. Illustrations and roadmap items rema
 - NDPC data-subject request information: https://forms.ndpc.gov.ng/dsar-request/
 
 The NDPC reference content was available in indexed official results; direct page/PDF retrieval was blocked with HTTP 403 in this environment. No comprehensive legal-compliance review is represented. Privacy text is limited to the site's actual browsing, optional email and video behaviours, and general statutory rights; no regulator endorsement, licence or deposit-insurance status is claimed.
+
+
+## Free support email (29 October 2026)
+
+- Google Gmail Help, "Send emails from a different address or alias": https://support.google.com/mail/answer/22370?hl=en — confirms plus-addressed messages are delivered to the base Gmail mailbox.
+- The connected Gmail profile was verified as Wave Transakt / `wavetransakt@gmail.com`. The website uses `wavetransakt+support@gmail.com` as an alias of that mailbox, without claiming a new independent account or verified test delivery.
